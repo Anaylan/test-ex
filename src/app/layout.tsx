@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/theme";
 import StyledComponentsRegistry from "./registry";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
 	children,
@@ -18,6 +19,7 @@ export default function RootLayout({
 						<StyledComponentsRegistry>{children}</StyledComponentsRegistry>
 					</ThemeProvider>
 				</AppRouterCacheProvider>
+				<SpeedInsights />
 			</body>
 		</html>
 	);

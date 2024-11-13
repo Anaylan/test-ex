@@ -16,6 +16,17 @@ const video: { src: string; title: string } = {
 export const metadata: Metadata = {
 	title: "Main page",
 	description: "main page test exercise",
+	openGraph: {
+		url: "https://test-ex-wheat.vercel.app",
+		title: "Main page",
+		description: "main page test exercise",
+		siteName: "test exercise",
+	},
+	twitter: {
+		site: "https://test-ex-wheat.vercel.app",
+		title: "Main page",
+		description: "main page test exercise",
+	},
 };
 
 export default async function Home() {

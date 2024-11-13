@@ -9,6 +9,17 @@ import { ContactForm } from "@/core/components/ContactForm";
 export const metadata: Metadata = {
 	title: "Contact page",
 	description: "contact page test exercise",
+	openGraph: {
+		url: "https://test-ex-wheat.vercel.app/contact",
+		title: "Contact page",
+		description: "contact page test exercise",
+		siteName: "test exercise",
+	},
+	twitter: {
+		site: "https://test-ex-wheat.vercel.app/contact",
+		title: "Contact page",
+		description: "contact page test exercise",
+	},
 };
 
 export default async function Contacts({
